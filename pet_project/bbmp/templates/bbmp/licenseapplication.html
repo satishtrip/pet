@@ -1,0 +1,26 @@
+{% extends "post/base.html" %}
+{% load crispy_forms_tags %}
+{% load static % }
+{% block content %}
+
+ <h4>Your Applied Licenses</h4>
+    {% for license in posts %}
+
+       {% if license.user == request.user %}
+
+
+
+
+
+        <article class="media content-section">
+            <h2><h5>Your License with ID and your Pet's Name</h5>        <a class="btn btn-outline-info" href="{% url 'license-detail' license.id %}">{{ license.id }} <strong>{{license.pet_name}}</strong></a></h2>
+
+
+              </article>
+     {% endif %}
+
+
+        {% endfor %}
+
+{% endblock content %}
+

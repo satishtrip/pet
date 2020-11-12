@@ -1,0 +1,13 @@
+set java-home
+
+apache.org/dyn/closer-cgi/hadoop/common
+
+exutcondition.com/install-hadoop-windows/
+
+
+
+3-10-19
+hadoop fs -put sample.txt /
+hadoop fs -ls /
+hadoop fs -ls /output
+>hadoop fs -cat /output/part-r-00000

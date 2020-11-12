@@ -1,0 +1,58 @@
+{% extends "post/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>License App Received</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+	{% if object.user == request.user %}
+  <h2>Your Application Status</h2>
+
+  <strong>Rest Now, We will take care of it from here! </strong>
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th>License ID</th>
+        <th>Firstname</th>
+        <th>Pet Type</th>
+        <th>Pet Name</th>
+		<th>Pet Breed</th>
+        <th>Pet Age</th>
+		<th>Delivery Address</th>
+        <th>Status</th>
+        <th>Updates</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{license.id}}</td>
+        <td>{{license.first_name}}</td>
+        <td>{{license.pet_type}}</td>
+        <td>{{license.pet_name}}</td>
+		<td>{{license.pet_breed}}</td>
+        <td>{{license.pet_age}}</td>
+        <td>{{license.address}}</td>
+        <td>{{license.status}}</td>
+        <td>{{license.message}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+
+{% endif %}
+{% endblock %}

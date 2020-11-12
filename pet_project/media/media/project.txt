@@ -1,0 +1,130 @@
+MINI 
+
+
+
+
+https://github.com/ShiboTanany/E-Commerce-App
+
+https://github.com/gmendonca/jsp-e-commerce/blob/master/cart.jsp
+
+https://github.com/gmendonca/jsp-e-commerce
+
+https://github.com/prabhunath/Onlineshopping
+
+
+http://dspace.cusat.ac.in/jspui/bitstream/123456789/8252/1/onlineshoppingsystem.pdf
+
+
+https://www.youtube.com/watch?v=T-sp0D3V504
+
+https://www.tutorialspoint.com/jfreechart/jfreechart_database_interface.htm
+
+
+
+##ER  https://erdplus.com/edit-diagram/6238c40d-ba52-4bd2-a677-cad45382bd15
+
+
+
+
+
+
+
+
+
+
+#############################################################################################################################################################################
+
+
+Android
+
+
+
+
+
+https://github.com/deeps2/Delhi06
+
+https://github.com/project-travel-mate/Travel-Mate
+
+
+
+
+
+
+***********************************************************************************************************************
+
+Cloud 
+sudo chmod 755 -R /var/www/html
+cd /var/www/html5 mkdir myhost
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BIG DATA
+
+
+
+>cd..
+
+C:\Windows>cd..
+
+C:\>cd Derby
+
+C:\Derby>cd db-derby-10.12.1.1-bin
+
+C:\Derby\db-derby-10.12.1.1-bin>cd bin
+
+C:\Derby\db-derby-10.12.1.1-bin\bin>startNetWorkServer -h 0.0.0.0
+
+
+
+
+
+
+
+>cd..
+
+C:\Windows>cd..
+
+C:\>cd Hive
+
+C:\Hive>cd apache-hive-2.1.0-bin
+
+C:\Hive\apache-hive-2.1.0-bin>cd bin
+
+C:\Hive\apache-hive-2.1.0-bin\bin>hive
+
+
+
+###office
+satishtrip@jageera.onmicrosoft.com
+
+
+############Android
+
+<activity android:name=".ui.CreateAccountActivity" />

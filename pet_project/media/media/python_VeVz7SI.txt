@@ -1,0 +1,318 @@
+nums = [10,23,5,7,9]
+nums.insert(5,20)
+print(nums)
+
+O/P  : [10, 23, 5, 7, 9, 20]
+
+nums = [22,22,44,55,7,8,9,1,2]
+sat = []
+for i in nums:
+    if i not in sat:
+        sat.append(i)
+print(sat)
+
+
+*****************************************************************************
+
+if __name__ == '__main__':
+    s = input()
+    
+print(bool(len([ch for ch in s if ch.isalnum()])))
+print(bool(len([ch for ch in s if ch.isalpha()])))
+print(bool(len([ch for ch in s if ch.isdigit()])))
+print(bool(len([ch for ch in s if ch.islower()])))
+print(bool(len([ch for ch in s if ch.isupper()])))
+
+
+
+***************************************************************************************8
+class Rev:
+    def __init__(self,string,rev=""):
+        self.string= string
+        self.rev=rev
+        for i in string:
+            rev = i+rev
+        print(rev)
+
+        if(rev==string):
+            print('Pallindrome')
+        else:
+            print('not a pallindrome')
+a =Rev(string=input("enter string"))
+a.__init__(string="",rev="")
+
+
+
+
+
+
+
+
+
+from collections import namedtuple
+a = namedtuple('courses','name,technology')
+s = a('datascience','python')
+print(s)
+
+
+O|P : courses(name='datascience', technology='python')
+s = a._make(['AI',"python"])
+O|P: courses(name='AI', technology='python')
+
+
+
+
+
+*****************Hackerrank*****************************************
+
+
+Consider a list (list = []). You can perform the following commands:
+
+insert i e: Insert integer  at position .
+print: Print the list.
+remove e: Delete the first occurrence of integer .
+append e: Insert integer  at the end of the list.
+sort: Sort the list.
+pop: Pop the last element from the list.
+reverse: Reverse the list.
+Initialize your list and read in the value of  followed by  lines of commands where each command will be of the  types listed above. Iterate through each command in order and perform the corresponding operation on your list.
+
+
+
+if __name__ == '__main__':
+    N = int(input()) 
+    list1=[] 
+    for i in range(N): 
+        cmd=input().split() 
+        command=cmd[0] 
+        if len(cmd)>1: 
+            index=int(cmd[1]) 
+            if len(cmd)>2: 
+                number=int(cmd[2]) 
+            if command=='insert': 
+                list1.insert(index,number) 
+                if command=='append': 
+                    list1.append(index) 
+                elif command=='remove': 
+                            list1.remove(index) 
+                            if command=='print': 
+                                print(list1) 
+                elif command=='pop': 
+                   list1.pop() 
+                elif command=='reverse': 
+                    list1.reverse() 
+                elif command=='sort': 
+                   list1.sort()
+   
+if __name__ == '__main__':
+    
+    N = int(input())
+    result = []
+    for n in range(N):
+        x = input().split(" ")
+        command = x[0]
+        if command == 'append':
+            result.append(int(x[1]))
+        if command == 'print':
+            print(result)
+        if command == 'insert':
+            result.insert(int(x[1]), int(x[2]))
+        if command == 'reverse':
+            result = result[::-1]
+        if command == 'pop':
+            result.pop()
+        if command == 'sort':
+            result = sorted(result)
+        if command == 'remove':
+            result.remove(int(x[1]))
+
+
+*********************************************************************************************************************************************	
+
+customer = {
+    "name": "satidsh",
+    "age": 39,
+    "is_verified": True
+
+}
+print(customer.get("lname","tripathi"))
+
+phone = input('enter number')
+dig_map = {
+    "1": "one",
+    "2" : "do",
+    "3":  "teen"
+}
+output = "  "
+for i in phone:
+    output += dig_map.get(i, "!" )+" "
+print(output)
+
+
+
+***********************************************************************************************************************************************************
+ 
+two.py
+
+
+import rank
+print("top-level in two.y")
+rank.func()
+
+if __name__ == "__main__":
+    print("two.py is being running")
+
+else:
+    print("two.py is being imported")
+
+
+
+rank.py
+
+
+
+
+
+def func():
+    print("func n rank.py")
+
+print("tao level in one.py")
+
+if __name__ == "__main__":
+    print("one.py is running")
+
+else:
+    print("one.py imported directlhy")
+
+
+
+
+*********************************************************************************************************************************************************************
+
+
+
+ #ARITHEMATIC GAME
+
+from operator import add,sub
+from random import randint, choice
+
+ops = {'+': add, '-': sub}
+MAXTRIES = 2
+
+def doprob():
+    op = choice('+-')
+    nums = [randint (1,10) for i in range (2)]
+    nums.sort(reverse = True)
+    ans = ops[op](*nums)
+    pr = '%d %s %d = ' % (nums[0],op,nums[1])
+    oops = 0
+    while True:
+        try:
+            if int(input(pr)) == ans:
+                print('correct')
+                break
+            if oops == MAXTRIES:
+                print('answer\n%s%d'%(pr, ans))
+            else:
+                print('incorrect. . . . try again')
+                oops +=1
+        except (KeyboardInterrupt, \
+                    EOFError, ValueError):
+                print( 'invalid input... try again')
+
+
+
+def main():
+    while True:
+        doprob()
+        try:
+            opt = input("Again? [y]").lower()
+            if opt and opt[0] == 'n' :
+                break
+
+        except  (KeyboardInterrupt, EOFError):
+            break
+
+if __name__ == '__main__':
+    main()
+
+
+
+*************************************************************************************************************************************************
+
+
+def count_substring(string, sub_string):
+
+    count = 0
+    sub = None
+    for i in range(len(string)):
+        if len(string)>len(sub_string):
+            sub=string.find(sub_string)
+            if (sub>0):
+                count += 1
+            string = string[(sub+1):]
+    return count
+
+
+string = input("string:").strip()
+sub_string = input("stri").strip()
+count = count_substring(string, sub_string)
+print(count)
+
+
+********************************************************************************************************************************************************************8
+
+def student(name, age, **marks):
+    print(("name:", name))
+    print('age', age)
+    print('marks', marks)
+    for i, value  in marks.items():
+        print(i,'',value)
+
+
+student('satish',45, english=65,python=43)
+
+****************************************************************************************************************************************************************
+
+encapsulation 
+
+class Rectangle:
+    def __init__(self,height,width):
+        self.__height = height
+        self.__width = width
+
+    def set_height(self,height):
+        self.__height = height
+    def get_height(self):
+        return self.__height
+    def set_width(self,width):
+        self.width = width
+    def get_width(self):
+        return self.__width
+    def area(self):
+        return self.__height *self.__width
+    def sum(self):
+        return self.__height+self.__width
+rect1 = Rectangle(5,4)
+rect2  = Rectangle(2,3)
+
+print(rect1.area())
+print(rect2.sum())
+
+
+**********************************************************************************************************************************************************************
+
+
+for i in range(int(input())):
+    try:
+        a,b = map(int,input().split()) 
+        division_result = a // b
+        print(division_result)
+    except ZeroDivisionError as e:
+        print("Error Code:", e)
+    except ValueError as e:
+        print("Error Code:", e)
+
+
+
+

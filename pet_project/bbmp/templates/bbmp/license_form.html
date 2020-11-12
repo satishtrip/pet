@@ -1,0 +1,96 @@
+{% extends "post/base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+ <div class="content-section">
+      <div class="media">
+        <img class="img-thumbnail" src="/media/def.jpg">
+        <div class="media-body">
+        </div>
+      </div>
+      <form method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+          <fieldset class="form-group">
+              <legend class="border-bottom mb-4">Send Your Application To Us and We will deliver it to you</legend>
+              {{ form|crispy }}
+          </fieldset>
+          <div class="form-group">
+              <button class="btn btn-outline-info" type="submit">Send Application</button>
+          </div>
+      </form>
+    </div>
+
+<h4>General FAQs</h4>
+<div class="container py-3">
+    <div class="row">
+        <div class="col-10 mx-auto">
+            <div class="accordion" id="faqExample">
+                <div class="card">
+                    <div class="card-header p-2" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Q: How does this work?
+                            </button>
+                          </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqExample">
+                        <div class="card-body">
+                            <b>Answer:</b> <h6>You don't have to worry  much about it as just you have to upload all the necessary documents be it in pdf format,doc format or jpg but pleaase make sure its valid as there are higher chances of it getting cancelled also we make sure that once the mission is accomplished we delete your address proof so that your data is safe.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header p-2" id="headingTwo">
+                        <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Q: Why BBMP License?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqExample">
+                        <div class="card-body">
+                            <b>Answer:</b>  <h6>Having pet dogs licensed is important for the owners , especially in the eventuality of lost or stolen pets, and is also good for the city as the census and health of pets is updated. As of now the dog census shows about 200 or so licenses issued in 2009 to dogs in Bangalore , and the BBMP records themselves show only a total of 2100 licenses issued altogether so far ! Something is clearly wrong.The proposed by-laws by BBMP elaborates on how the process of licensing the pet dogs has to be done. Accordingly, every dog owner in BBMP limits, should obtain a license to keep the dog at home and renew it every year. It also involves implanting a micro-chip in dog’s body at the owner’s cost as and when approved by the Corporation.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header p-2" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Q. What is Charges for all?
+                            </button>
+                          </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                        <div class="card-body">
+                           <b>Answer:</b>  <h6>Generally the charge is
+                            ₹ : 100 For BBMP Pet License Book
+                            ₹:10 for application
+                            ₹ 200 for delivery and transport up and down as we provide delivery across all the areas covered in bangalore urban.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header p-2" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Q. Where can I contact ?
+                            </button>
+                          </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                        <div class="card-body">
+                           <h6> You can generally mail us at the website email but also for application purpoese we have a dedicated number they are 9538603830 and 9876543210  it is well connected on whatsapp too for your conveneince</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--/row-->
+</div>
+
+{% endblock content %}

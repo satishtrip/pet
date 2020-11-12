@@ -1,0 +1,357 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+     <style>
+       {% block css %}
+
+      body {
+  background: #fafafa;
+  color: #333333;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}'''
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+ul {
+  margin: 0;
+}
+
+.bg-steel {
+  background-color: #5f788a;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+
+.article-title {
+  color: #444444;
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 95px;
+  width: 95px;
+  margin-right: 26px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 165px;
+  width: 165px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+
+body {
+  background: #F1F3FA;
+}
+
+/* Profile container */
+.profile {
+  margin: 20px 0;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+  padding: 20px 0 10px 0;
+  background: #fff;
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #5a7391;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #5b9bd1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+  margin-right: 0px;
+}
+
+.profile-usermenu {
+  margin-top: 30px;
+}
+
+.profile-usermenu ul li {
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+  color: #93a3b5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+  background-color: #fafcfd;
+  color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li.active a {
+  color: #5b9bd1;
+  background-color: #f6f9fb;
+  border-left: 2px solid #5b9bd1;
+  margin-left: -2px;
+}
+
+/* Profile Content */
+.profile-content {
+  padding: 20px;
+  background: #fff;
+  min-height: 460px;
+}
+
+body{
+	background-color:#F8F8F8!important;
+}
+
+#profile-wrapper{
+	text-align: center;
+}
+
+#profile-pic{
+	width:150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+ul{
+	padding: 0;
+    list-style-type: none;
+}
+
+
+.social-links ul, li{
+	list-style-type:none;
+	display: inline-block;
+}
+
+.social{
+	width:20px;
+	height: 20px;
+
+        {% endblock %}
+  </style>
+
+    {% if title %}
+        <title>Pet Lookout - {{ title }}</title>
+    {% else %}
+        <title>Pet Lookout</title>
+    {% endif %}
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="/home/">
+                  <div class="nav-left">
+        <img src="/media/logo.jpg"width="40" height="40">
+                  </div>
+      </a>
+
+
+
+    <ul class="nav navbar-nav">
+          <a class="navbar-brand mr-4" href="{% url 'post-about' %}">Pet Lookout</a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="{% url 'post-home' %}">Home</a>
+              <a class="nav-item nav-link" href="{% url 'post-about' %}">About</a>
+
+
+                <a class="nav-item nav-link" href="{% url 'petcab-petcab' %}">Pet Cab</a>
+                <a class="nav-item nav-link" href="http://127.0.0.1:8000"> Cakes and Food</a>
+                <a class="nav-item nav-link" href="{% url 'bbmp-license' %}">BBMP License</a>
+
+
+            </div>
+
+              <style>
+
+</style>
+
+
+            <!-- Navbar Right Side -->
+           <div class="navbar-nav">
+              {% if user.is_authenticated %}
+
+                <a class="nav-item nav-link" href="{% url 'petpost-create' %}">Post About Myself</a>
+                <a class="nav-item nav-link" href="{% url 'profile' %}">Pet Lover</a>
+               <a class="nav-item nav-link" href="{% url 'petcab-booking' %}">Your Cab</a>
+                <a class="nav-item nav-link" href="{% url 'bbmp-licenseapplication' %}">Your License</a>
+
+
+
+
+
+
+
+                <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
+
+              {% else %}
+                <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
+                <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>
+              {% endif %}
+            </div>
+          </div>
+          </div>
+    </ul>
+        </div>
+      </nav>
+    </header>
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8">
+          {% if messages %}
+            {% for message in messages %}
+              <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+              </div>
+            {% endfor %}
+          {% endif %}
+          {% block content %}{% endblock %}
+        </div>
+      {% include 'post/sidebar.html' %}
+      </div>
+    </main>
+    <div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>PET LOVER</h3>
+      <p>Be a Pet Sitter</p>
+      <p>Be a Walker</p>
+      <p>Be a Trainer</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>PET SERVICES</h3>
+      <p>Pet Sitting</p>
+      <p>Dog Walking</p>
+      <p>Pet Taxi  </p>
+       <p>Pet BBMP License </p>
+    </div>
+  </div>
+</div>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    {% block js %} {% endblock %}
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+</body>
+</html>

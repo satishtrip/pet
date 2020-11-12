@@ -1,0 +1,30 @@
+{% extends "post/base.html" %}
+{% load static %}
+{% block content %}
+
+  <article class="media content-section">
+    <img class="rounded-circle article-img" src="{{ object.pet_lover.user.profile.image.url }}">
+    <div class="media-body">
+      <div class="article-metadata">
+
+
+         <a class="mr-2" href="{% url 'profile-detail' petpost.pet_lover.user.profile.id %}">{{ petpost.pet_lover }}</a>
+        <small class="text-muted">{{ object.date_posted|date:"F d, Y" }}</small>
+        <div class="media">
+        <img class="img-thumbnail"width="200" height="125" src="{{ petpost.photo_with_pets.url|default_if_none:'#' }}">
+        <div class="media-body">
+          </div>
+                  </div>
+        {% if object.pet_lover == user.profile %}
+          <div>
+            <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{% url 'petpost-update' object.id %}">Update</a>
+            <a class="btn btn-danger btn-sm mt-1 mb-1" href="{% url 'petpost-delete' object.id %}">Delete</a>
+          </div>
+        {% endif %}
+      </div>
+      <h2 class="article-title">{{ object.interests }}</h2>
+      <p class="article-content">{{ object.working_style }}</p>
+    </div>
+  </article>
+{% endblock content %}
+

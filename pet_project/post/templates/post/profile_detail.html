@@ -1,0 +1,121 @@
+
+{% extends "post/base.html" %}
+{% load crispy_forms_tags %}
+{% load static % }
+{% block content %}
+
+<div class="content-section">
+      <div class="media">
+        <img class="rounded-circle account-img" src="{{ profile.image.url }}">
+        <div class="media-body">
+          <h4 class="account-heading">{{ profile.first_name }}  {{profile.last_name}}</h4>
+          <h6 class="text-secondary">{{ profile.user.email }}</h6>
+        <h6 class="text-secondary">{{ profile.pet_preference }}</h6>
+        <h6 class="text-secondary">{{ profile.describe_yourself }}</h6>
+        </div>
+        </div>
+<div class="p-3">
+
+   <h2 class="myhead2">Hi there Pet Parent I am a  {{profile.pet_preference}}  Person</h2>
+   <hr>
+<div class="row">
+    {{ row|crispy }}
+   <div class="col-sm-13">
+   <h6><strong>Age :: </strong> {{profile.age}}</h6>
+   <h6><strong>Gender :: </strong> {{profile.gender}}</h6>
+   <h6><strong>Address :: </strong> {{profile.address}}</h6>
+   <h6><strong>Job Type :: </strong> {{profile.job_type}}</h6>
+   <h6><strong>Phone No :: </strong> {{profile.phone}}</h6>
+   <h6><strong>Email :: </strong> {{profile.user.email}}</h6>
+   <h6><strong>Pet Preference :: </strong> {{profile.pet_preference}}</h6>
+   <h6><strong>Session(Hourly) Charges :: </strong> {{profile.hourly_rate}}</h6>
+    <h6><strong>Organisation I joined :: </strong> {{profile.organisation_name}}</h6>
+   <h6><strong>Overnight Rate :: </strong> {{profile.overnight_rate}}</h6>
+   <h6><strong>Organisation Member(If any)::</strong> {{profile.member_of_any_organisation}}</h6>
+   <h6><strong> Pet First Aid or CPR ::</strong> {{profile.dog_firstaid_and_or_CPR}}</h6>
+   <h6><strong>My Photo with my pet:: </strong>
+   <div class="col-sm-12">
+      <img class="img-fluid" src="{{ profile.your_photos_with_pets.url }}">
+      </div>
+   </div>
+</div>
+</div>
+
+<h4>General FAQs</h4>
+<div class="container py-3">
+    <div class="row">
+        <div class="col-10 mx-auto">
+            <div class="accordion" id="faqExample">
+                <div class="card">
+                    <div class="card-header p-2" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Q: How does this work?
+                            </button>
+                          </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqExample">
+                        <div class="card-body">
+                            <b>Answer:</b> <h6>View the profile of our pet lovers and whomeveryou find it to be more appealing and good for pet contact them and give your requirements details and the availability of them.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header p-2" id="headingTwo">
+                        <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Q: Who are the pet lovers?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqExample">
+                        <div class="card-body">
+                            <b>Answer:</b>  <h6>Anyone can be a pet lover ,but you have to upload your picture with a pet which can lead to higher chances of you getting the attention of pet parent leading to your work. </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header p-2" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Q. How to reach them?
+                            </button>
+                          </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                        <div class="card-body">
+                           <b>Answer:</b>  <h6>Generally you can find their contact number on their profile and also mail them on their email id provided</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header p-2" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Q. Where can I contact ?
+                            </button>
+                          </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                        <div class="card-body">
+                           <h6> You can generally mail us at the website email but also for application purpoese we have a dedicated number they are 9538603830 and 9876543210  it is well connected on whatsapp too for your conveneince</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--/row-->
+
+
+
+
+{% endblock %}
+
+
+
+
+
+

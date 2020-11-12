@@ -1,0 +1,44 @@
+{% extends "post/base.html" %}
+{% load static %}
+{% block content %}
+{% load crispy_forms_tags %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+{{ form.media }}
+
+
+  <div class="content-section">
+
+      <div class="media">
+        <img class="img-thumbnail" src="/media/deftaxi.jpeg">
+        <div class="media-body">
+        </div>
+      </div>
+
+
+    <form method="POST" enctype="multipart/form-data">
+
+
+        <link rel="stylesheet" type="text/css" href="{% static 'admin/css/forms.css' %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'admin/css/widgets.css' %}"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+          {% csrf_token %}
+          <fieldset class="form-group">
+              <legend class="border-bottom mb-4">Book Taxi For Your Furry Friend</legend>
+
+
+              {% bootstrap_form form %}
+
+          </fieldset>
+          <div class="form-group">
+              <button class="btn btn-outline-info" type="submit">Book</button>
+          </div>
+
+
+      </form>
+    </div>
+
+
+{% endblock content %}

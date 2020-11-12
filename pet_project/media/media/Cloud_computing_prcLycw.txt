@@ -1,0 +1,12 @@
+sign up for amz ec
+
+create key pair
+launch an amzn ec2 instance
+connect ot the instance
+customize the instance
+terminate instance or delete the volume created
+
+
+connect amazonec2 linux instance from windowmachine
+via(putty.exe and puttygren.exe
+connect 

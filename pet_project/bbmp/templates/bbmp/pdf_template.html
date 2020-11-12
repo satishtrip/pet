@@ -1,0 +1,40 @@
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="p-5">
+
+<H>Pet Lookout</H>
+
+
+
+
+	<h1>Your Application Has been Received, We will contact you for further updates!!</h1>
+
+
+
+
+
+       {% if license.user == request.user %}
+	<h1 class="myhead2">{{License.first_name}}</h1>
+	<h2 class = "myhead3">Your License Id : {{l.id}}</h2>
+	<hr>
+<div class="row">
+	<div class="col-sm-15">
+	<p><strong>Pet Age :: </strong> {{l.pet_age}}</p>
+	<p><strong>Gender :: </strong> {{l.pet_gender}}</p>
+	<p><strong> Delivery Address :: </strong> {{l.address}}</p>
+	<p><strong>Phone No :: </strong> {{license.user}}</p>
+
+
+	<div class="col-sm-8">
+
+		</div>
+	</div>
+</div>
+	</div>
+
+
+{% endif %}
+
+
+{% endblock %}

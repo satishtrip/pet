@@ -1,0 +1,173 @@
+book chor
+
+rent books
+lending 
+sell and buy
+droppin of book at nearest
+courier book at extra charge if extra books then no extra charges for delivery
+
+download e-books
+payment gateway
+audio books
+
+
+
+
+
+Rent utensils to hotels
+
+Add utensils 
+stock of utensils
+hotel owner can register as customers with their hotel name and delivery address
+hotel owners can order for more utensils and also return the utensils
+
+
+customers will have to return the utensils either to us or the hotel or swiggy boys and then  he will deliver it back to hotel from wher our man will pick it up
+
+weekly report of utensils being sold
+  
+
+
+
+
+
+
+
+tinder for studybuddy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PET LOOKOUT 
+
+
+
+
+
+
+
+1.  A web based platform pet owners can look for a pet sitter in the city and can decide to select any one of them to take care of their pet for some hours or the number of days
+
+2.  also pet sitters can create their profile and look out for jobs like pet sitting etc
+
+3.  pet owners can rate the pet sitters according to their wish and thsese ratings should be present on the pet sitters profile along with the feedback provided, also pet sitters too can rate the pet owners .
+4.  pet trainer too can apply for training off pets 
+
+5. Also pet walker who can the dogs out for a walk in case the owner is abesnt
+
+
+5.  Pet owners will also be able to book a car a day before for having an outing with their pets and also the prices will depend on the number of kilometeters the car has run and driver charges 
+	also in case of emergency one can call and the car would be sent depending on availability
+
+6.  Other facilities such as day boarding,grooming and also pet trainers too  can be provided 
+    pet care tips, pet homecooked food , and cakes too shall be provide but orders should be given a day before the scheduled day
+
+
+6. Python , django,javascript and database not yet decided
+
+7. Payment for products can be done online plus membership fee for pet sitters after a duration of time
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+o create a program in the C# programming language that is capable of pairing texts together as plagiarized off of each other.
+
+Methods/Materials
+1. Group of students to write a paragraph
+
+2. Paper to write on
+
+3. Pencils
+
+4. Controlled classroom environment
+
+5. List to track students who plagiarized
+
+6. Computer
+
+7. Calculator to find program accuracy
+
+SOFTWARE:
+1. Plagiarism Analysis Program
+2. Notepad or other text editor to compare data
+
+Results
+
+1. To determine if the program successful: Did it catch at least half of the students who plagiarized?
+
+2. To determine the overall accuracy of the program: Divide the number of correctly identified cases of plagiarism by the actual amount. Was it at least eighty percent?
+
+FINAL RESULTS: 1. The program did accurately detect plagiarism. It successfully paired together 20 out of 22 texts as plagiarized (more than half) 2. The program's accuracy was over 80%. After dividing the total amount of correct results (20) by the total texts (22), the percentage returned was 90.9%.
+
+Conclusions/Discussion
+For my experiment I created a program in the C# programming language to pair texts together as plagiarized. I hypothesized that the program could successfully pair together at least half of the texts, and would have an overall accuracy of at least 80%. I gathered a group of 44 students together in a controlled classroom environment to obtain the paragraph samples required for my experiment, that conducted the analysis with the program at home.
+
+My hypothesis was correct. The program did accurately detect plagiarism to the conditions specified (Giving accurate results at least half of the time). Additionally, the program's accuracy was 90.9%, which was 10.9% higher than the required 80%.
+
+This project is to create a computer program in the C# programming language that can detect plagiarism between two texts.
+
+
+
+
+
+
+
+
+
+
+
+
+https://github.com/jllorencetti/pets/tree/master/pets
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
