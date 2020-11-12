@@ -39,7 +39,7 @@ Pet Cab and Bookings
 
 ![image](https://user-images.githubusercontent.com/44036415/98934301-de545680-2507-11eb-8f91-380bb34286b6.png)
 
-![image](https://user-images.githubusercontent.com/44036415/98934819-a4d01b00-2508-11eb-88ec-96123fc5182a.png)
+
 
 
 
@@ -55,6 +55,23 @@ Pet Cakes and Food
 
 
 ![image](https://user-images.githubusercontent.com/44036415/98934743-8ec25a80-2508-11eb-957e-2bfe6c79bc09.png)
+
+
+
+Admin 
+
+![image](https://user-images.githubusercontent.com/44036415/98935162-1e680900-2509-11eb-852c-fddaa5b23f76.png)
+
+
+
+
+![image](https://user-images.githubusercontent.com/44036415/98935017-e8c32000-2508-11eb-8d01-8c81a4ab6de6.png)
+
+
+![image](https://user-images.githubusercontent.com/44036415/98935072-fd071d00-2508-11eb-9278-245358361051.png)
+
+
+
 
 
 
